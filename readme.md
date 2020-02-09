@@ -1,5 +1,7 @@
 LeetCode学习之旅
 
+- com.lyldelove.problemset对应LeetCode题库，每part 10道题
+
 - 可参考的github项目
     - https://github.com/CyC2018/CS-Notes 
         - 技术面试必备基础知识

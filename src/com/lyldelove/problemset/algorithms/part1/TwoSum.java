@@ -1,4 +1,4 @@
-package com.lyldelove.problemset.part1;
+package com.lyldelove.problemset.algorithms.part1;
 
 import java.util.HashMap;
 import java.util.Map;

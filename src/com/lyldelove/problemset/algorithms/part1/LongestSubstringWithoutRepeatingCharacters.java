@@ -1,4 +1,4 @@
-package com.lyldelove.problemset.part1;
+package com.lyldelove.problemset.algorithms.part1;
 
 /**
  * 3、无重复字符的最长子串
