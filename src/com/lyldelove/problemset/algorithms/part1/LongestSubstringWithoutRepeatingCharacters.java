@@ -8,6 +8,12 @@ import java.util.Map;
  *
  * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
  *
+ * 扩展：循环字符串的几种方式
+ *  1 charAt()
+ *  2 getBytes()
+ *  3 toCharArray()
+ *  4 substring
+ *
  * 解法：滑动窗口
  *  head 头指针
  *  tail 尾指针
@@ -40,11 +46,3 @@ public class LongestSubstringWithoutRepeatingCharacters {
         System.out.println(result);
     }
 }
-
-/**
- * 扩展：循环字符串的几种方式
- * 1 charAt()
- * 2 getBytes()
- * 3 toCharArray()
- * 4 substring
- */
