@@ -1,18 +1,24 @@
 package com.lyldelove.problemset.algorithms.part1;
 
-/**
- * 2、两数之和
+/*
+ * 2、两数相加
  *
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
  *
  * 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
  *
  * 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
+ *
+ * 解题思路：
+ *  1、申明哑结点，且新链表的头节点为哑结点
+ *  2、申明移动结点，从头节点往后延伸
+ *  3、申明进位标识，当2个数之和>9时，下一个循环需要+1
+ *  4、循环2个链表，往后延伸新链表
+ * 时间复杂度：O(max(m, n))
+ * 空间复杂度：O(max(m, n))
  */
 
-/**
- * 链表节点类
- */
+// 链表节点类
 class ListNode {
     int val;
     ListNode next;
@@ -24,7 +30,7 @@ class ListNode {
 
 public class AddTwoNumbers {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    private ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode dummyNode = new ListNode(0); //申明哑结点，表示新链表的头节点，是不动的
         ListNode moveNode = dummyNode; //申明移动的结点，沿着新链表往后延伸，初始值为头节点
@@ -73,15 +79,5 @@ public class AddTwoNumbers {
         new AddTwoNumbers().addTwoNumbers(aNode1, bNode1);
     }
 }
-
-/**
- * 解题思路：
- *  1、申明哑结点，且新链表的头节点为哑结点
- *  2、申明移动结点，从头节点往后延伸
- *  3、申明进位标识，当2个数之和>9时，下一个循环需要+1
- *  4、循环2个链表，往后延伸新链表
- * 时间复杂度：O(max(m, n))
- * 空间复杂度：O(max(m, n))
- */
 
 

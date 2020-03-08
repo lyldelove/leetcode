@@ -14,3 +14,8 @@
 
 - https://github.com/kdn251/interviews
     - Everything you need to know to get the job.
+    
+### 开发工具相关
+
+- https://github.com/judasn/IntelliJ-IDEA-Tutorial
+    -   IntelliJ IDEA 简体中文专题教程
