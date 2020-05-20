@@ -9,7 +9,7 @@ import java.util.Set;
  * @author lyldelove
  * @title LC0003 无重复字符的最长子串
  * @url https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
- * @tag 滑动窗口 HashSet
+ * @tag 滑动窗口SlidingWindow HashSet
  * @date 2020/4/5 8:25
  */
 public class LC0003 {

@@ -4,7 +4,7 @@ package com.lyldelove.algorithms.phase1;
  * @author lyldelove
  * @title LC0004 寻找2个有序数组的中位数
  * @url https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
- * @tag
+ * @tag 二分查找 分治算法
  * @date 2020/4/12 6:26
  */
 public class LC0004 {
