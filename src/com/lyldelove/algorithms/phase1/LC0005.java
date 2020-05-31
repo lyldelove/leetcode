@@ -4,7 +4,7 @@ package com.lyldelove.algorithms.phase1;
  * @author lyldelove
  * @title LC0005 最长回文子串
  * @url https://leetcode-cn.com/problems/longest-palindromic-substring/
- * @tag 动态规划
+ * @tag 动态规划 中心扩散
  * @date 2020/5/20 22:10
  */
 public class LC0005 {
@@ -43,7 +43,7 @@ public class LC0005 {
     }
 
     /**
-     * 动态规划算法，空间换时间
+     * 方法2 动态规划算法，空间换时间
      * 时间复杂度：
      * 空间复杂度：
      * @param s
@@ -104,7 +104,7 @@ public class LC0005 {
     }
 
     /**
-     * 中心扩散法
+     * 方法3 中心扩散法
      * 枚举所有可能的回文子串的中心位置
      * 中心位置可能是一个字符，也有可能是2个相邻的字符
      * @param s
@@ -156,12 +156,21 @@ public class LC0005 {
         return r - l - 1;
     }
 
-    public String longestPalindrome(String s) {
-        return expandCenter(s);
+    /**
+     * 方法4 马拉车算法
+     * 将原始字符串进行预处理，在预处理字符串上执行[动态规划]和[中心扩散]算法
+     * 暂时没有看懂
+     * @param s
+     * @return
+     */
+    public String manacher(String s) {
+        return "";
     }
 
     public static void main(String[] args) {
         String s = "abncd";
-        System.out.println(new LC0005().longestPalindrome(s));
+        System.out.println(new LC0005().exhaustiveAttack(s));
+        System.out.println(new LC0005().dynamicProgramming(s));
+        System.out.println(new LC0005().expandCenter(s));
     }
 }
